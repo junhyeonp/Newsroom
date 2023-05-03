@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsroom</title>
+    <!-- favicon -->
+    <link rel="icon" href="./icon-32.png" type="image/x-icon" sizes="16x16" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <!-- bxSlider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 1100,
+          touchEnabled: navigator.maxTouchPoints > 0,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="main_header">
+      <div id="title">
+        <h1>Newsroom</h1>
+      </div>
+      <nav id="main_lnb">
+        <ul>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Economics</a></li>
+          <li><a href="#">Society</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Entertainment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content">
+      <section id="main_section" class="bxslider">
+        <article class="main_article">
+          <div class="img_container">
+            <img src="./images/entertainment.jpg" alt="" />
+          </div>
+          <div class="news_description">
+            <p>연예</p>
+            <h2>
+              피프티 피프티 '큐피드(Cupid)', 美빌보드 'HOT 100' 4주 연속 진입
+            </h2>
+            <p>2023년 4월 19일</p>
+          </div>
+          <a
+            href="https://sports.hankooki.com/news/articleView.html?idxno=6827034"
+            target="_blank"
+            class="news_link"
+          ></a>
+        </article>
+        <article class="main_article">
+          <div class="img_container">
+            <img src="./images/society.jpg" alt="" />
+          </div>
+          <div class="news_description">
+            <p>사회</p>
+            <h2>
+              "인간과 친밀감 형성해.." 챗GPT(ChatGPT) 써본 유발 하라리가 SNS보다
+              AI(인공지능)가 위험한 이유를 설명했다
+            </h2>
+            <p>2023년 4월 20일</p>
+          </div>
+          <a
+            href="https://www.huffingtonpost.kr/news/articleView.html?idxno=208779"
+            target="_blank"
+            class="news_link"
+          ></a>
+        </article>
+        <article class="main_article">
+          <div class="img_container">
+            <img src="./images/economics.jpg" alt="" />
+          </div>
+          <div class="news_description">
+            <p>경제</p>
+            <h2>혼술 늘자 MZ가 찾는다...수입량 역대 최대치 찍은 '아재술'</h2>
+            <p>2023년 4월 24일</p>
+          </div>
+          <a
+            href="https://www.joongang.co.kr/article/25157401"
+            target="_blank"
+            class="news_link"
+          ></a>
+        </article>
+        <article class="main_article">
+          <div class="img_container">
+            <img src="./images/world.jpg" alt="" />
+          </div>
+          <div class="news_description">
+            <p>세계</p>
+            <h2>
+              "당신 때문에 시험 망쳐"...미셸 오바마, 홍콩 수험생 악플테러 받은
+              이유
+            </h2>
+            <p>2023년 4월 24일</p>
+          </div>
+          <a
+            href="https://www.chosun.com/international/international_general/2023/04/24/FYDT63CXAVBJRKIIU4ZVWYZMSI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news"
+            target="_blank"
+            class="news_link"
+          ></a>
+        </article>
+        <article class="main_article">
+          <img src="./images/politics.jpeg" alt="" />
+          <div class="news_description">
+            <p>정치</p>
+            <h2>
+              윤, 일본에 또 저자세..."100년 전 일로 '무릎 꿇으라' 동의 못 해"
+            </h2>
+            <p>2023년 4월 24일</p>
+          </div>
+          <a
+            href="https://www.hani.co.kr/arti/politics/politics_general/1089210.html"
+            target="_blank"
+            class="news_link"
+          ></a>
+        </article>
+      </section>
+    </section>
+    <footer id="main_footer">
+      <h3>Newsroom</h3>
+      <ul>
+        <li><a href="">정기구독</a></li>
+        <li><a href="">회사소개</a></li>
+        <li><a href="">광고/제휴</a></li>
+        <li><a href="">개인정보 처리방침</a></li>
+      </ul>
+      <p class="copyright">Newsroom is operated by junhyeon park</p>
+    </footer>
+  </body>
+</html>
